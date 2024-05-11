@@ -1,0 +1,32 @@
+.title_news {
+  margin: 10px;
+  font-size: 30px;
+  color: #363636;
+}
+
+.news {
+  display: flex;
+  align-items: center;
+}
+
+.news p {
+  margin-top: 5px;
+  margin-left: 20px;
+  font-size: 15px;
+
+  text-decoration-line: underline;
+  color: #363636;
+}
+
+.news p:hover {
+  text-decoration-line: none;
+}
+
+@media only screen and (max-width: 450px) {
+  .news {
+    flex-wrap: wrap;
+  }
+  .title_news {
+    width: 100%;
+  }
+}

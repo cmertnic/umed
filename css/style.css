@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gerbera', sans-serif;
+
+}
+
+@font-face {
+  font-family: "Gerbera";
+  font-style: Light;
+  font-weight: 400;
+
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Gerbera"),
+       /* Если не получилось, загрузит woff2 */
+       url("/fonts/Gerbera.woff2") format("woff2"),
+}
+@font-face {
+  font-family: "Gerbera";
+  font-style: Bold;
+  font-weight: 700;
+
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Gerbera"),
+       /* Если не получилось, загрузит woff2 */
+       url("/fonts/Gerbera-Bold.woff2") format("woff2"),
+}
+@font-face {
+  font-family: "Gerbera";
+  font-style: Medium;
+  font-weight: 500;
+
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Gerbera"),
+       /* Если не получилось, загрузит woff2 */
+       url("/fonts/Gerbera-Medium.woff2") format("woff2"),
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+
+/***************************************************************************************/
+body::-webkit-scrollbar {
+  width: 14px;
+  /* ширина scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #5E419D;
+  /* цвет дорожки */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(51, 51, 51);
+  /* цвет плашки */
+
+}
+.pc {
+  display: block;
+}
+
+.mob {
+  display: none;
+}
+@media only screen and (max-width: 630px) {
+  .pc {
+    display: none;
+  }
+
+  .mob {
+    display: block;
+  }
+}
+
+
+
+/******************************************************/
+.carousel2 {
+  max-width: 1300px;
+  cursor: grab;
+  overflow: hidden;
+  margin: 10px;
+  border-radius: 20px;
+
+}
+
+.carousel2--wrap2 {
+  white-space: nowrap;
+}
+
+.carousel2__info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+}
+
+.carousel2--item2 {
+  display: inline-block;
+  width: 512px;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 1.25rem;
+  box-sizing: border-box;
+
+
+}
+
+/**********************************************************/

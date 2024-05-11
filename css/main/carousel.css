@@ -1,0 +1,168 @@
+.carousel {
+    max-width: 1300px;
+    cursor: grab;
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 20px;
+  
+  }
+  
+  .title_novosti {
+    margin: 10px;
+    font-size: 30px;
+    /* line-height: 38px; */
+    color: #363636;
+  }
+  
+  .novosti {
+    display: flex;
+    align-items: center;
+  }
+  
+  .endnovosti_text {
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 15px;
+  
+    text-decoration-line: underline;
+    color: #363636;
+  }
+  
+  .carousel__img {
+    border-radius: 20px;
+  }
+  
+  .carousel_text {
+    font-size: 1rem;
+    /* line-height: normal; */
+    color: rgba(54, 54, 54, 0.5);
+    margin-bottom: 0.5rem;
+  }
+  
+  .carousel_theend__text {
+    font-size: 14px;
+    line-height: 20px;
+    color: #363636;
+  }
+  
+  .carousel__title {
+    font-size: 1.3rem;
+    /* line-height: 26px; */
+    color: #363636;
+    overflow: hidden;
+  
+    margin-bottom: 13px;
+  }
+  
+  .carousel_comment {
+    margin-bottom: 10px;
+    display: inline-block;
+    padding: 4px 8px 4px 8px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #A0C74F;
+    background: rgba(160, 199, 79, .15);
+    border-radius: 100px;
+  }
+  
+  .carousel--wrap {
+    white-space: nowrap;
+  }
+  
+  .carousel__info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  
+  }
+  
+  .carousel__textblock {
+    max-width: 200px;
+  }
+  
+  .carousel--item {
+    display: inline-block;
+    width: 512px;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 1.25rem;
+    box-sizing: border-box;
+  
+  
+  }
+.carousel {
+    max-width: 1300px;
+    cursor: grab;
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 20px;
+  
+  }
+  .carousel__img {
+    border-radius: 20px;
+    margin-right: 16px;
+  }
+  
+  .carousel_text {
+    font-size: 1rem;
+    /* line-height: normal; */
+    color: rgba(54, 54, 54, 0.5);
+    margin-bottom: 0.5rem;
+  }
+  
+  .carousel_theend__text {
+    font-size: 14px;
+    line-height: 20px;
+    color: #363636;
+  }
+  
+  .carousel__title {
+    font-size: 1.3rem;
+    /* line-height: 26px; */
+    color: #363636;
+    overflow: hidden;
+  
+    margin-bottom: 13px;
+  }
+  
+  .carousel_comment {
+    margin-bottom: 10px;
+    display: inline-block;
+    padding: 4px 8px 4px 8px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #A0C74F;
+    background: rgba(160, 199, 79, .15);
+    border-radius: 100px;
+  }
+  
+  .carousel--wrap {
+    white-space: nowrap;
+  }
+  
+  .carousel__info {
+    display: flex;
+    align-items: flex-start;
+  
+  }
+  
+  .carousel__textblock {
+    max-width: 200px;
+  }
+  .carousel_end__text{
+    color: #363636;
+  }
+  .carousel_end__text:hover{
+    transition: .3s all ease;
+    color: #3b71ca;
+  }
+  .carousel--item {
+    display: inline-block;
+    width: 512px;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 1.25rem;
+    box-sizing: border-box;
+    margin-right: 10px;
+  
+  }
