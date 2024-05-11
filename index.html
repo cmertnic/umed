@@ -1,0 +1,1676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Уральский медицинский колледж Umed - медицинское образование в Челябинске</title>
+  <link rel="icon" type="image/x-icon" href="/images/fav.ico">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/wrapper.css">
+  <link rel="stylesheet" href="./css/wrapper.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/mapModal.css">
+  <link rel="stylesheet" href="./css/main/start_learning.css">
+  <link rel="stylesheet" href="./css/main/card.css">
+  <link rel="stylesheet" href="./css/main/banner.css">
+  <link rel="stylesheet" href="./css/main/news.css">
+  <link rel="stylesheet" href="./css/main/carousel.css">
+  <link rel="stylesheet" href="./css/main/otziv.css">
+  <link rel="stylesheet" href="./css/main/swiper-bundle_min.css" />
+  <link rel="stylesheet" href="./css/main/download.css">
+  <link rel="stylesheet" href="./css/questions_modal.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link href="./css/aos.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/48764efa36.js" crossorigin="anonymous"></script>
+  <script src="./js/slider.js" defer></script>
+  <script src="./js/wrapper.js" defer></script>
+  <script src="./js/mapModal.js" defer></script>
+  <script src="./js/sliderotz.js" defer></script>
+  <script src="./js/questionmodal.js" defer></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://lidrekon.ru/slep/js/jquery.js"></script>
+  <script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
+</head>
+
+<body onload="startAutoSlide()">
+  <div class="widget_container">
+    <div class="popup_elements">
+      <div class="widget_tooltip" style="display: none;">
+        <div class="tooltip_close">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="black"
+            stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </div>
+        <p>Напиши мне</p>
+      </div>
+      <div class="widget_elements">
+        <div class="widget_element">
+          <a href="https://t.me/umed_chat">
+            <img class="widget-element_img" src="./images/tg-avatar.png" alt="tg avatar">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper">
+    <button id="goTop" class="btn_top " style="display: block;">
+      <svg class="arrow up" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="5 0 50 80" xml:space="preserve">
+        <polyline fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" points="
+          0.375, 35.375 28.375, 0.375 58.67, 35.375 "></polyline>
+      </svg>
+    </button>
+    <div class="modal fade" id="mapModal" tabindex="-1" style="display: none;" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body modal-body-video">
+            <button type="button" class="btn btn-link close-icon" data-bs-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+
+            <div class="js-modal-map-container"><iframe src="https://yandex.ru/map-widget/v1/-/CCU5AAS78A" width="100%"
+                height="600" style="position:relative;"></iframe></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade " id="askQuestionModal" tabindex="-1" style="display: none;" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body modal-body-video">
+            <button type="button" class="btn btn-link close-icon" id="askQuestionModal_close" data-bs-dismiss="modal"
+              aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+
+            <div class="js-modal-form-container">
+              <div class="b24-form">
+                <div id="b24-2231381955185187724201525225465725" data-styles-apllied="true" class="">
+                  <div class="b24-form-wrapper b24-form-shadow">
+                    <div class="b24-form-header b24-form-padding-side"><!---->
+                      <div class="b24-form-header-description">Оставьте заявку, мы свяжемся с Вами и ответим на все
+                        вопросы</div>
+                    </div>
+                    <div class="b24-form-content b24-form-padding-side">
+                      <form method="post" novalidate="novalidate"><!---->
+                        <div>
+                          <div class="b24-form-field b24-form-field-name b24-form-control-string">
+                            <div>
+                              <div>
+                                <div class="b24-form-control-container b24-form-control-icon-after"><input name="name"
+                                    autocomplete="given-name" type="string" class="b24-form-control">
+                                  <div class="b24-form-control-label">
+                                    Имя
+                                    <span class="b24-form-control-required" style="display: none;">*</span>
+                                  </div> <!----> <!---->
+                                  <div class="b24-form-control-alert-message" style="display: none;">
+
+                                  </div>
+                                </div>
+                              </div> <!----> <!---->
+                            </div> <!---->
+                          </div>
+                          <div class="b24-form-field b24-form-field-phone b24-form-control-string">
+                            <div>
+                              <div>
+                                <div class="b24-form-control-container b24-form-control-icon-after"><input name="phone"
+                                    autocomplete="tel" type="tel" class="b24-form-control">
+                                  <div class="b24-form-control-label">
+                                    Телефон
+                                    <span class="b24-form-control-required">*</span>
+                                  </div> <!----> <!---->
+                                  <div class="b24-form-control-alert-message" style="display: none;">
+                                    Поле обязательно для заполнения
+                                  </div>
+                                </div>
+                              </div> <!----> <!---->
+                            </div> <!---->
+                          </div>
+                          <div class="b24-form-field b24-form-field-email b24-form-control-string">
+                            <div>
+                              <div>
+                                <div class="b24-form-control-container b24-form-control-icon-after"><input name="email"
+                                    autocomplete="email" type="email" class="b24-form-control">
+                                  <div class="b24-form-control-label">
+                                    E-mail
+                                    <span class="b24-form-control-required" style="display: none;">*</span>
+                                  </div> <!----> <!---->
+                                  <div class="b24-form-control-alert-message" style="display: none;">
+
+                                  </div>
+                                </div>
+                              </div> <!----> <!---->
+                            </div> <!---->
+                          </div>
+                          <div class="b24-form-field b24-form-field-text b24-form-control-text">
+                            <div>
+                              <div>
+                                <div class="b24-form-control-container b24-form-control-icon-after"><textarea
+                                    class="b24-form-control"></textarea>
+                                  <div class="b24-form-control-label">
+                                    Комментарий
+                                    <span class="b24-form-control-required" style="display: none;">*</span>
+                                  </div> <!---->
+                                  <div class="b24-form-control-alert-message" style="display: none;">
+
+                                  </div>
+                                </div>
+                              </div> <!----> <!---->
+                            </div> <!---->
+                          </div>
+                        </div>
+                        <div>
+                          <div class="b24-form-field b24-form-field-agreement b24-form-control-agreement"><!---->
+                            <div><label class="b24-form-control-container"><input type="checkbox" onclick="this.blur()">
+                                <span class="b24-form-control-desc"><span class="b24-form-field-agreement-link">Нажимая
+                                    кнопку «Отправить», я даю свое согласие на обработку моих персональных данных, в
+                                    соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных
+                                    данных», на условиях и для целей, определенных в Согласии на обработку персональных
+                                    данных</span></span> <span class="b24-form-control-required">*</span>
+                                <div class="b24-form-control-alert-message" style="display: none;">
+
+                                </div>
+                              </label> <!----></div>
+                          </div>
+                          <div class="v-portal" style="display: none;"></div>
+                        </div> <!---->
+                        <div class="b24-form-btn-container"><!----> <!---->
+                          <div class="b24-form-btn-block"><button type="submit" class="b24-form-btn">
+                              Отправить
+                            </button></div>
+                        </div> <span style="color: red; display: none;">
+                          Debug: fill fields
+                        </span>
+                      </form>
+                    </div>
+                    <div class="b24-form-state-container">
+                      <div class="b24-form-loader" style="display: none;"><!---->
+                        <div class="b24-form-loader-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 263 174">
+                            <g transform="translate(52.5,7)">
+                              <path id="bxSunLines"
+                                d="M79,0 C80.6568542,0 82,1.34314575 82,3 L82,22 C82,23.6568542 80.6568542,25 79,25 C77.3431458,25 76,23.6568542 76,22 L76,3 C76,1.34314575 77.3431458,0 79,0 Z M134.861,23.139 C136.032146,24.3104996 136.032146,26.2095004 134.861,27.381 L121.426,40.816 C120.248863,41.9529166 118.377746,41.9366571 117.220544,40.7794557 C116.063343,39.6222543 116.047083,37.7511367 117.184,36.574 L130.619,23.139 C131.7905,21.9678542 133.6895,21.9678542 134.861,23.139 L134.861,23.139 Z M158,79 C158,80.6568542 156.656854,82 155,82 L136,82 C134.343146,82 133,80.6568542 133,79 C133,77.3431458 134.343146,76 136,76 L155,76 C156.656854,76 158,77.3431458 158,79 Z M134.861,134.861 C133.6895,136.032146 131.7905,136.032146 130.619,134.861 L117.184,121.426 C116.40413,120.672777 116.091362,119.557366 116.365909,118.508478 C116.640455,117.45959 117.45959,116.640455 118.508478,116.365909 C119.557366,116.091362 120.672777,116.40413 121.426,117.184 L134.861,130.619 C136.032146,131.7905 136.032146,133.6895 134.861,134.861 Z M79,158 C77.3431458,158 76,156.656854 76,155 L76,136 C76,134.343146 77.3431458,133 79,133 C80.6568542,133 82,134.343146 82,136 L82,155 C82,156.656854 80.6568542,158 79,158 Z M23.139,134.861 C21.9678542,133.6895 21.9678542,131.7905 23.139,130.619 L36.574,117.184 C37.3272234,116.40413 38.4426337,116.091362 39.491522,116.365909 C40.5404103,116.640455 41.3595451,117.45959 41.6340915,118.508478 C41.9086378,119.557366 41.5958698,120.672777 40.816,121.426 L27.381,134.861 C26.2095004,136.032146 24.3104996,136.032146 23.139,134.861 Z M0,79 C0,77.3431458 1.34314575,76 3,76 L22,76 C23.6568542,76 25,77.3431458 25,79 C25,80.6568542 23.6568542,82 22,82 L3,82 C1.34314575,82 0,80.6568542 0,79 L0,79 Z M23.139,23.139 C24.3104996,21.9678542 26.2095004,21.9678542 27.381,23.139 L40.816,36.574 C41.5958698,37.3272234 41.9086378,38.4426337 41.6340915,39.491522 C41.3595451,40.5404103 40.5404103,41.3595451 39.491522,41.6340915 C38.4426337,41.9086378 37.3272234,41.5958698 36.574,40.816 L23.139,27.381 C21.9678542,26.2095004 21.9678542,24.3104996 23.139,23.139 Z"
+                                fill="#FFD110" class="bx-sun-lines-animate"></path>
+                            </g>
+                            <g fill="none" fill-rule="evenodd">
+                              <path
+                                d="M65.745 160.5l.245-.005c13.047-.261 23.51-10.923 23.51-23.995 0-13.255-10.745-24-24-24-3.404 0-6.706.709-9.748 2.062l-.47.21-.196-.477A19.004 19.004 0 0 0 37.5 102.5c-10.493 0-19 8.507-19 19 0 1.154.103 2.295.306 3.413l.108.6-.609-.01A17.856 17.856 0 0 0 18 125.5C8.335 125.5.5 133.335.5 143s7.835 17.5 17.5 17.5h47.745zM166.5 85.5h69v-.316l.422-.066C251.14 82.73 262.5 69.564 262.5 54c0-17.397-14.103-31.5-31.5-31.5-.347 0-.694.006-1.04.017l-.395.013-.103-.382C226.025 9.455 214.63.5 201.5.5c-15.014 0-27.512 11.658-28.877 26.765l-.047.515-.512-.063a29.296 29.296 0 0 0-3.564-.217c-16.016 0-29 12.984-29 29 0 15.101 11.59 27.643 26.542 28.897l.458.039v.064z"
+                                stroke-opacity=".05" stroke="#000" fill="#000"></path>
+                              <circle stroke="#FFD110" stroke-width="6" cx="131.5" cy="86.5" r="44.5"
+                                class="b24-form-loader-icon-sun-ring"></circle>
+                            </g>
+                          </svg></div>
+                      </div>
+                      <div class="b24-form-state b24-form-success" style="display: none;">
+                        <div class="b24-form-state-inner">
+                          <div class="b24-form-state-icon b24-form-success-icon"></div>
+                          <div class="b24-form-state-text">
+                            <p>Отправлено!</p>
+                            <p></p>
+                          </div> <!---->
+                        </div>
+                        <div class="b24-form-inner-box"></div>
+                      </div>
+                      <div class="b24-form-state b24-form-error" style="display: none;">
+                        <div class="b24-form-state-inner">
+                          <div class="b24-form-state-icon b24-form-error-icon"></div>
+                          <div class="b24-form-state-text">
+                            <p></p>
+                          </div> <button class="b24-form-btn b24-form-btn-border b24-form-btn-tight">
+                            Отправить еще раз
+                          </button>
+                        </div>
+                        <div class="b24-form-inner-box"></div>
+                      </div>
+                      <div class="b24-form-state b24-form-warning" style="display: none;">
+                        <div class="b24-form-state-inner">
+                          <div class="b24-form-state-icon b24-form-warning-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 169 169">
+                              <defs>
+                                <circle id="a" cx="84.5" cy="84.5" r="65.5"></circle>
+                                <filter x="-.8%" y="-.8%" width="101.5%" height="101.5%" filterUnits="objectBoundingBox"
+                                  id="b">
+                                  <feGaussianBlur stdDeviation=".5" in="SourceAlpha" result="shadowBlurInner1">
+                                  </feGaussianBlur>
+                                  <feOffset dx="-1" dy="-1" in="shadowBlurInner1" result="shadowOffsetInner1">
+                                  </feOffset>
+                                  <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1"
+                                    k3="1" result="shadowInnerInner1"></feComposite>
+                                  <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0886691434 0"
+                                    in="shadowInnerInner1" result="shadowMatrixInner1"></feColorMatrix>
+                                  <feGaussianBlur stdDeviation=".5" in="SourceAlpha" result="shadowBlurInner2">
+                                  </feGaussianBlur>
+                                  <feOffset dx="1" dy="1" in="shadowBlurInner2" result="shadowOffsetInner2"></feOffset>
+                                  <feComposite in="shadowOffsetInner2" in2="SourceAlpha" operator="arithmetic" k2="-1"
+                                    k3="1" result="shadowInnerInner2"></feComposite>
+                                  <feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.292285839 0"
+                                    in="shadowInnerInner2" result="shadowMatrixInner2"></feColorMatrix>
+                                  <feMerge>
+                                    <feMergeNode in="shadowMatrixInner1"></feMergeNode>
+                                    <feMergeNode in="shadowMatrixInner2"></feMergeNode>
+                                  </feMerge>
+                                </filter>
+                              </defs>
+                              <g fill="none" fill-rule="evenodd">
+                                <circle stroke-opacity=".05" stroke="#000" fill-opacity=".07" fill="#000" cx="84.5"
+                                  cy="84.5" r="84"></circle>
+                                <use fill="#FFF" xlink:href="#a"></use>
+                                <use fill="#000" filter="url(#b)" xlink:href="#a"></use>
+                                <path
+                                  d="M114.29 99.648L89.214 58.376c-1.932-3.168-6.536-3.168-8.427 0L55.709 99.648c-1.974 3.25.41 7.352 4.234 7.352h50.155c3.782 0 6.166-4.103 4.193-7.352zM81.404 72.756c0-1.828 1.48-3.29 3.33-3.29h.452c1.85 0 3.33 1.462 3.33 3.29v12.309c0 1.827-1.48 3.29-3.33 3.29h-.453c-1.85 0-3.33-1.463-3.33-3.29V72.756zm7.77 23.886c0 2.274-1.892 4.143-4.194 4.143s-4.193-1.869-4.193-4.143c0-2.275 1.891-4.144 4.193-4.144 2.302 0 4.193 1.869 4.193 4.144z"
+                                  fill="#000" opacity=".4"></path>
+                              </g>
+                            </svg></div>
+                          <div class="b24-form-state-text">
+                            <p>Форма не актуальна</p>
+                          </div>
+                        </div>
+                        <div class="b24-form-inner-box"></div>
+                      </div>
+                    </div> <!---->
+                    <div class="b24-form-sign"><select style="display: none;">
+                        <option value="sc">
+                          sc
+                        </option>
+                        <option value="it">
+                          it
+                        </option>
+                        <option value="en">
+                          en
+                        </option>
+                        <option value="ru">
+                          ru
+                        </option>
+                        <option value="la">
+                          la
+                        </option>
+                        <option value="th">
+                          th
+                        </option>
+                        <option value="ar">
+                          ar
+                        </option>
+                        <option value="pl">
+                          pl
+                        </option>
+                        <option value="fr">
+                          fr
+                        </option>
+                        <option value="vn">
+                          vn
+                        </option>
+                        <option value="tc">
+                          tc
+                        </option>
+                        <option value="tr">
+                          tr
+                        </option>
+                        <option value="ms">
+                          ms
+                        </option>
+                        <option value="ja">
+                          ja
+                        </option>
+                        <option value="br">
+                          br
+                        </option>
+                        <option value="hi">
+                          hi
+                        </option>
+                        <option value="de">
+                          de
+                        </option>
+                        <option value="ua">
+                          ua
+                        </option>
+                        <option value="in">
+                          in
+                        </option>
+                        <option value="id">
+                          id
+                        </option>
+                      </select>
+                      <div><span class="b24-form-sign-abuse"><a
+                            href="https://www.bitrix24.ru/abuse/?b24_form_id=11&amp;b24_address=https%3A%2F%2Fumed.bitrix24.ru&amp;b24_form_address=https%3A%2F%2Fumedcollege.ru%2F"
+                            target="_blank" rel="nofollow" class="b24-form-sign-abuse-link">
+                            Сообщить о нарушении
+                          </a> <span
+                            title="Компания Битрикс24 не несёт ответственности за содержимое формы, но вы можете сообщить нам о нарушении"
+                            class="b24-form-sign-abuse-help"></span></span>
+                        <div>
+                          <div class="b24-window">
+                            <div class="b24-window-overlay" style="display: none;"></div>
+                            <div class="b24-window-popup b24-window-popup-p-center" style="display: none;">
+                              <div class="b24-window-popup-wrapper"><button type="button" class="b24-window-close"
+                                  style="z-index: 220;"></button>
+                                <div><!---->
+                                  <div class="b24-window-scrollable" style="z-index: 200;">
+                                    <div class="b24-window-scroll-anchor" style="display: none;"></div>
+                                    <div class="b24-window-popup-head">
+                                      <div class="b24-window-popup-title">Сообщить о нарушении</div>
+                                    </div>
+                                    <div class="b24-window-popup-body">
+                                      <div class="b24-form-sign-abuse-popup">
+                                        Компания Битрикс24 не несёт ответственности за содержимое формы, но вы можете
+                                        сообщить нам о нарушении
+                                      </div>
+                                    </div>
+                                    <div class="b24-window-scroll-anchor" style="display: none;"></div>
+                                  </div> <!---->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div> <!---->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <script data-b24-form="inline/11/10erj3" data-skip-moving="true" data-b24-loaded="true"></script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right_questions" id="askQuestionbtn">
+      <a href="#!" class="right_questions_img">
+        <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M7.1563 4.67412C8.26608 4 9.81099 4 12.9008 4C15.9906 4 17.5355 4 18.6453 4.67412C19.1257 4.96596 19.5383 5.34096 19.8593 5.77772C20.5071 6.65907 20.589 7.8423 20.5993 10L20.6008 10L23.0331 11.1056C23.8438 11.4741 23.8438 12.5259 23.0331 12.8944L20.6008 14L20.5993 14C20.589 16.1577 20.5071 17.3409 19.8593 18.2223C19.5383 18.659 19.1257 19.034 18.6453 19.3259C17.5355 20 15.9906 20 12.9008 20C9.81099 20 8.26608 20 7.1563 19.3259C6.67586 19.034 6.26336 18.659 5.94234 18.2223C5.20081 17.2134 5.20081 15.8089 5.20081 13L5.20081 11C5.20081 8.19108 5.20081 6.78661 5.94234 5.77772C6.26336 5.34096 6.67586 4.96596 7.1563 4.67412Z"
+            fill="#5E419D" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M10.7008 15L10.7008 9" stroke="white" stroke-width="1.2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path d="M15.1008 15L15.1008 12" stroke="white" stroke-width="1.2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        <p>Задать вопрос</p>
+      </a>
+    </div>
+    <div class="left-menu minimized bvi-no-styles aos-init aos-animate" data-aos="fade-right" data-aos-offset="0"
+      data-aos-duration="450" data-aos-once="true">
+      <div class="menu-opener">
+        <a href="#!" class="">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </a>
+      </div>
+    </div>
+    <div class="overlay"></div>
+    <div class="menu-block">
+      <nav class="navbar navbar-expand-lg shadow-0">
+        <div class="navbar-collapse">
+          <ul class="navbar-nav ">
+            <li class="nav-item lk-item">
+              <a class="nav-link lk" href="https://umedcollege.ru/lk/"><img src="./images/lk-icon.svg" alt="[rofile]">
+                Личный кабинет
+              </a>
+            </li>
+
+            <li class="nav-item dropdown" onclick="closeAllDropdowns()">
+              <a class="nav-link dropdown-toggle " href="javascript:void(0);" id="navbarDropdown1" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                О колледже <img src="./images/show-more-arrow.svg" alt="show-more-arrow" width="16">
+              </a>
+              <ul class="dropdown-menu shadow-0" aria-labelledby="navbarDropdown1" id="navbarDropdown1ul">
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/o-kolledze/">История колледжа</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/o-kolledze/">Кружки и секции</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/o-kolledze/">Экскурсия</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/o-kolledze/">Студенческая жизнь</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/o-kolledze/">Новости</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/o-kolledze/">Блог</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/o-kolledze/">Вакансии</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/o-kolledze/">СОУТ</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/o-kolledze/">Безопасность</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/o-kolledze/">Контакты</a>
+                </li>
+
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="navbarDropdown12" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Специальности <img src="./images/show-more-arrow.svg" alt="show-more-arrow" width="16">
+              </a>
+              <ul class="dropdown-menu shadow-0" aria-labelledby="navbarDropdown12" id="navbarDropdown12ul">
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/specialties/">Сестринское дело</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/specialties/">Лечебное дело</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/specialties/">Медицинская оптика</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/specialties/">Фармация</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/specialties/">Стоматология
+                    профилактическая</a>
+                </li>
+
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="navbarDropdown18" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Ускоренное обучение <img src="./images/show-more-arrow.svg" alt="show-more-arrow" width="16">
+              </a>
+              <ul class="dropdown-menu shadow-0" aria-labelledby="navbarDropdown18" id="navbarDropdown18ul">
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/specialties-usk/">Сестринское дело</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/specialties-usk/">Лечебное дело</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/specialties-usk/">Медицинская оптика</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/specialties-usk/">Фармация</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/specialties-usk/">Стоматология
+                    профилактическая</a>
+                </li>
+
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://umedcollege.ru/o-kolledze/">Дополнительное образование</a>
+            </li>
+
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="navbarDropdown25" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Студентам <img src="./images/show-more-arrow.svg" alt="show-more-arrow" width="16">
+              </a>
+              <ul class="dropdown-menu shadow-0" aria-labelledby="navbarDropdown25" id="navbarDropdown25ul">
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/for-students/">Промежуточная
+                    аттестация</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/for-students/">Государственная итоговая
+                    аттестация</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/for-students/">Первичная аккредитация</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/for-students/">Трудоустройство</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/for-students/">Внеучебная и
+                    социальная работа</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/for-students/">Расписание занятий</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/for-students/">Расписание звонков</a>
+                </li>
+
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="navbarDropdown33" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Поступающим <img src="./images/show-more-arrow.svg" alt="show-more-arrow" width="16">
+              </a>
+              <ul class="dropdown-menu shadow-0" aria-labelledby="navbarDropdown33" id="navbarDropdown33ul">
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/for-prospective-students/">Дни открытых
+                    дверей</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/for-prospective-students/">Профпробы</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/for-prospective-students/">Вопросы-ответы</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/for-prospective-students/">План приема
+                    студентов</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/for-prospective-students/">Правила приема</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/for-prospective-students/">Условия
+                    приема на обучение по договорам об оказании платных образовательных услуг</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/for-prospective-students/">Перечень
+                    специальностей, по которым Колледж объявляет прием, и требования к уровню образования</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/for-prospective-students/">Перечень
+                    и формы проведения вступительных испытаний, особенности проведения для инвалидов и лиц с ОВЗ</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/for-prospective-students/">Информация
+                    о возможности приема заявлений и необходимых документов в электронной форме</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/for-prospective-students/">Об
+                    обязательном предварительном медицинском осмотре</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/for-prospective-students/">Стоимость
+                    обучения</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/for-prospective-students/">Общий
+                    список поступающих</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/for-prospective-students/">О зачислении</a>
+                </li>
+
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="navbarDropdown47" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Сведения об образовательной организации <img src="./images/show-more-arrow.svg" alt="show-more-arrow"
+                  width="16">
+              </a>
+              <ul class="dropdown-menu shadow-0" aria-labelledby="navbarDropdown47" id="navbarDropdown47ul">
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/about/">Основные сведения</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/about/">Структура и органы управления
+                    образовательной организацией</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/about/">Документы</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/about/">Образование</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/about/">Руководство.
+                    Педагогический (научно-педагогический) состав</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/about/">Материально-техническое
+                    обеспечение и оснащенность образовательного процесса</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/about/">Платные образовательные
+                    услуги</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/about/">Финансово-хозяйственная
+                    деятельность</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/about/">Вакантные места для приема
+                    (перевода) обучающихся</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/about/">Доступная среда</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item"
+                    href="https://umedcollege.ru/about/mezhdunarodnoe-sotrudnichestvo.php">Международное
+                    сотрудничество</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item"
+                    href="https://umedcollege.ru/about/obrazovatelnye-standarty.php">Образовательные стандарты</a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="https://umedcollege.ru/about/stipendii-i-mery-podderzhki.php">Стипендии
+                    и меры поддержки
+                    обучающихся</a>
+                </li>
+
+
+              </ul>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+
+      <div class="nav-footer mt-3">
+        <div class="nav-footer-info">
+          <p>
+            © 2024
+          </p>
+          <p>Уральский медицинский колледж</p>
+          <a href="/privacy-policy/">Политика конфиденциальности</a>
+        </div>
+        <div class="nav-footer-social">
+          <a href="https://vk.com/umedcollege" target="_blank"><img src="./images/menu-vk.png" alt="menu-vk"></a>
+          &nbsp;<a href="https://ok.ru/group/68723453394994" target="_blank"><img src="./images/menu-ok.png"
+              alt="menu-ok"></a>
+          &nbsp;&nbsp;&nbsp;
+        </div>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="container">
+        <div class="header__row">
+          <a href="/" class="pc"><img src="./images/header/head-logo2.svg" alt="Logo" width="303" height="50"></a>
+          <a href="/" class="mob"><img src="./images/header/mob-logo2.svg" alt="mob-logo" width="203" height="50"></a>
+          <a href="tel:+73512020060">
+            <div class="header__phone">
+              <p class="header_phone_text">+7 351 202 00 60</p>
+              <div class="header__consult">
+                <img src="./images/tel-icon.svg" alt="tel-icon">
+                <p class="header_consult_text">Получить консультацию</p>
+              </div>
+            </div>
+          </a>
+          <div class="header__icons">
+            <a href="https://umedcollege.ru/search/index.php?q="><img src="./images/header/search-icon.svg"
+                alt="search"></a>
+            <a id="specialButton" href="#"><img src="./images/header/view-icon.svg" alt="view"></a>
+            <a href="https://umedcollege.ru/lk/"><img src="./images/header/user-icon.svg" alt="user"></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <div class="main__row">
+          <div class="start_learning">
+            <div class="slider" data-aos="zoom-in">
+              <a href="https://kosmetolog.umedcollege.ru/?utm_medium=banner&utm_campaign=kosmetolog25%2F04">
+                <div class="slider__img slider__img_active"><img src="./images/start_learning/slider/banner1.png"
+                    alt="banner1"></div>
+              </a>
+              <a href="https://umedcollege.ru/specialties-usk/?utm_medium=banner&utm_campaign=start_usk">
+                <div class="slider__img slider__img_active"><img src="./images/start_learning/slider/banner2.png"
+                    alt="banner2"></div>
+              </a>
+
+              <button id="btnLeft" onclick="stopAutoSlide()" class="slider__btn slider__btn_left">
+                <svg width="13" height="23" viewBox="0 0 13 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.5" clip-path="url(#clip0_2201_13)">
+                    <path
+                      d="M0.92022 10.534C0.359927 11.1174 0.359927 12.0632 0.92022 12.6466L10.0507 22.1528C10.611 22.7362 11.5195 22.7362 12.0798 22.1528C12.6401 21.5695 12.6401 20.6237 12.0798 20.0403L3.96373 11.5903L12.0798 3.14034C12.6401 2.55699 12.6401 1.6112 12.0798 1.02785C11.5195 0.444495 10.611 0.444494 10.0507 1.02784L0.92022 10.534ZM4.23029 10.0966H1.93473V13.0841H4.23029V10.0966Z"
+                      fill="white" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2201_13">
+                      <rect width="13" height="23" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+              <button id="btnRight" onclick="stopAutoSlide()" class="slider__btn slider__btn_right">
+                <svg width="13" height="23" viewBox="0 0 13 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_2201_11)">
+                    <path
+                      d="M12.1699 12.6461C12.7302 12.0628 12.7302 11.117 12.1699 10.5336L3.03931 1.02736C2.47902 0.444006 1.5706 0.444005 1.01031 1.02736C0.450014 1.6107 0.450014 2.5565 1.01031 3.13985L9.12636 11.5898L1.01031 20.0398C0.450014 20.6232 0.450014 21.5689 1.01031 22.1523C1.5706 22.7357 2.47902 22.7357 3.03931 22.1523L12.1699 12.6461ZM10.0076 13.0836H11.1553V10.0961H10.0076V13.0836Z"
+                      fill="white" fill-opacity="0.5" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2201_11">
+                      <rect width="13" height="23" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+            </div>
+            <div class="information" data-aos="zoom-in">
+              <div class="commission">
+                <div class="information__title_img">
+                  <h2 class="information__title">Приемная <br> кампания 2024 </h2>
+                  <img src="./images/start_learning/information/calendar-icon.svg" alt="">
+                </div>
+                <div class="commission__ul">
+                  <a href="https://umedcollege.ru/o-kolledze/istoriya-kolledzha.php" class="commission__ul__href">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.97949 4L13.2925 13.3133" stroke="#363636" stroke-width="1.2" />
+                      <path d="M13.2925 5.354V13.3133H5.33322" stroke="#363636" stroke-width="1.2" />
+                    </svg>
+                    <p class="commission__text">Почему мы?</p>
+                  </a>
+                  <a href="https://umedcollege.ru/specialties/" class="commission__ul__href">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.97949 4L13.2925 13.3133" stroke="#363636" stroke-width="1.2" />
+                      <path d="M13.2925 5.354V13.3133H5.33322" stroke="#363636" stroke-width="1.2" />
+                    </svg>
+
+                    <p class="commission__text">Программы обучения</p>
+                  </a>
+                  <a href="https://umedcollege.ru/for-students/vneuchebnaya-i-sotsialnaya-rabota"
+                    class="commission__ul__href">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.97949 4L13.2925 13.3133" stroke="#363636" stroke-width="1.2" />
+                      <path d="M13.2925 5.354V13.3133H5.33322" stroke="#363636" stroke-width="1.2" />
+                    </svg>
+
+                    <p class="commission__text">Внеучебная и социальная работа</p>
+                  </a>
+                  <a href="https://umedcollege.ru/for-prospective-students/pravila-priema.php"
+                    class="commission__ul__href">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.97949 4L13.2925 13.3133" stroke="#363636" stroke-width="1.2" />
+                      <path d="M13.2925 5.354V13.3133H5.33322" stroke="#363636" stroke-width="1.2" />
+                    </svg>
+
+                    <p class="commission__text">Как подать документы</p>
+                  </a>
+                </div>
+
+              </div>
+              <div class="commission">
+                <div class="information__title_img">
+                  <h2 class="information__title">Важная <br> информация</h2>
+                  <img src="./images/start_learning/company/chat-plus-icon.svg" alt="">
+                </div>
+                <div class="commission__ul">
+                  <a href="https://umedcollege.ru/about/" class="commission__ul__href">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.97949 4L13.2925 13.3133" stroke="#363636" stroke-width="1.2" />
+                      <path d="M13.2925 5.354V13.3133H5.33322" stroke="#363636" stroke-width="1.2" />
+                    </svg>
+
+                    <p class="commission__text">Сведения об образовательной организации</p>
+                  </a>
+                  <a href="https://umedcollege.ru/additional-education/" class="commission__ul__href">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.97949 4L13.2925 13.3133" stroke="#363636" stroke-width="1.2" />
+                      <path d="M13.2925 5.354V13.3133H5.33322" stroke="#363636" stroke-width="1.2" />
+                    </svg>
+                    <p class="commission__text">Дополнительное образование</p>
+                  </a>
+                  <a href="https://umedcollege.ru/for-prospective-students/voprosy-otvety.php"
+                    class="commission__ul__href">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.97949 4L13.2925 13.3133" stroke="#363636" stroke-width="1.2" />
+                      <path d="M13.2925 5.354V13.3133H5.33322" stroke="#363636" stroke-width="1.2" />
+                    </svg>
+
+                    <p class="commission__text">Вопросы и ответы</p>
+                  </a>
+                  <a href="https://umedcollege.ru/about/news/" class="commission__ul__href">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.97949 4L13.2925 13.3133" stroke="#363636" stroke-width="1.2" />
+                      <path d="M13.2925 5.354V13.3133H5.33322" stroke="#363636" stroke-width="1.2" />
+                    </svg>
+
+                    <p class="commission__text">Новости и события</p>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="Block_cards Main_way" data-aos="zoom-in">
+            <div class="block_location">
+              <img src="./images/location-icon.svg" alt="location">
+              <h2 class="block_title">Основное направление</h2>
+            </div>
+
+            <div class="card_block">
+              <a href="https://umedcollege.ru/specialties/sestrinskoe-delo/">
+                <div class="card" data-aos="zoom-in">
+                  <img class="back" src="./images/Main_way/sistr.jpg" alt="sistr">
+                  <h2 class="card_title">Сестринское дело</h2>
+                  <div class="podblock_card">
+                    <div class="Text_block">
+                      <p>9, 11 классов</p>
+                      <p>Форма обучения: Очная, Очно-Заочная</p>
+                    </div>
+                    <img src="./images/card/card_arrow_white.svg" alt="card_arrow_white.">
+                  </div>
+                </div>
+              </a>
+              <a href="https://umedcollege.ru/specialties/lechebnoe-delo/">
+                <div class="card" data-aos="zoom-in">
+                  <img class="back" src="./images/Main_way/lechdelo.jpg" alt="lechdelo">
+                  <h2 class="card_title">Лечебное дело</h2>
+                  <div class="podblock_card">
+                    <div class="Text_block">
+                      <p>9, 11 классов</p>
+                      <p>Форма обучения: Очная, Очно-Заочная</p>
+                    </div>
+                    <img src="./images/card/card_arrow_white.svg" alt="card_arrow_white.">
+                  </div>
+                </div>
+              </a>
+              <a href="https://umedcollege.ru/specialties/meditsinskaya-optika/">
+                <div class="card" data-aos="zoom-in">
+                  <img class="back" src="./images/Main_way/optica.jpg" alt="optica">
+                  <h2 class="card_title">Медицинская оптика</h2>
+                  <div class="podblock_card">
+                    <div class="Text_block">
+                      <p>9, 11 классов</p>
+                      <p>Форма обучения: Заочная, Очная</p>
+                    </div>
+                    <img src="./images/card/card_arrow_white.svg" alt="card_arrow_white.">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="card_big_block" data-aos="zoom-in">
+              <a href="https://umedcollege.ru/specialties/farmatsiya/">
+                <div class="card_big" data-aos="zoom-in">
+                  <img class="back" src="./images/Main_way/farmacion.jpg" alt="farmacion">
+                  <h2 class="card_title">Фармация</h2>
+                  <div class="podblock_big_card">
+                    <div class="Text_block">
+                      <p>9, 11 классов</p>
+                      <p>Форма обучения: Заочная, Очная</p>
+                    </div>
+                    <img src="./images/card/card_arrow_white.svg" alt="card_arrow_white.">
+                  </div>
+                </div>
+              </a>
+              <a href="https://umedcollege.ru/specialties/stomatologiya-profilakticheskaya/">
+                <div class="card_big" data-aos="zoom-in">
+                  <img class="back" src="./images/Main_way/stomatologia.jpg" alt="stomatologia">
+                  <h2 class="card_title">Стоматология профилактическая</h2>
+                  <div class="podblock_big_card">
+                    <div class="Text_block">
+                      <p>11 классов</p>
+                      <p>Форма обучения: Заочная, Очная</p>
+                    </div>
+                    <img src="./images/card/card_arrow_white.svg" alt="card_arrow_white.">
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="Block_cards Speed_lesson" data-aos="zoom-in">
+            <div class="block_location">
+              <img src="./images/location-icon.svg" alt="location">
+              <h2 class="block_title">Ускоренное обучение</h2>
+            </div>
+
+            <div class="card_block">
+              <a href="https://umedcollege.ru/specialties-usk/sestrinskoe-delo-usk/">
+                <div class="card" data-aos="zoom-in">
+                  <img class="back" src="./images/Speed_lesson/sistr2.jpg" alt="sistr">
+                  <h2 class="card_title">Сестринское дело</h2>
+                  <div class="podblock_card">
+                    <div class="Text_block">
+                      <p>высшее или среднее профессиональное образование любого профиля</p>
+                      <p>Форма обучения: Очно-Заочная</p>
+                    </div>
+                    <img src="./images/card/card_arrow_white.svg" alt="card_arrow_white.">
+                  </div>
+                </div>
+              </a>
+              <a href="https://umedcollege.ru/specialties-usk/lechebnoe-delo-usk/">
+                <div class="card" data-aos="zoom-in">
+                  <img class="back" src="./images/Speed_lesson/lechdelo2.png" alt="lechdelo">
+                  <h2 class="card_title">Лечебное дело</h2>
+                  <div class="podblock_card">
+                    <div class="Text_block">
+                      <p>медицинское образование (высшее или среднее профессиональное)</p>
+                      <p>Форма обучения: Очно-Заочная</p>
+                    </div>
+                    <img src="./images/card/card_arrow_white.svg" alt="card_arrow_white.">
+                  </div>
+                </div>
+              </a>
+              <a href="https://umedcollege.ru/specialties-usk/meditsinskaya-optika-usk/">
+                <div class="card" data-aos="zoom-in">
+                  <img class="back" src="./images/Speed_lesson/optica2.png" alt="optica">
+                  <h2 class="card_title">Медицинская оптика</h2>
+                  <div class="podblock_card">
+                    <div class="Text_block">
+                      <p>высшее или среднее профессиональное образование любого профиля</p>
+                      <p>Форма обучения: Заочная</p>
+                    </div>
+                    <img src="./images/card/card_arrow_white.svg" alt="card_arrow_white.">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="card_big_block" data-aos="zoom-in">
+              <a href="https://umedcollege.ru/specialties-usk/farmatsiya-usk/">
+                <div class="card_big" data-aos="zoom-in">
+                  <img class="back" src="./images/Speed_lesson/farmacion2.png" alt="farmacion">
+                  <h2 class="card_title">Фармация</h2>
+                  <div class="podblock_big_card">
+                    <div class="Text_block">
+                      <p>высшее или среднее профессиональное образование любого профиля</p>
+                      <p>Форма обучения: Очно-Заочная</p>
+                    </div>
+                    <img src="./images/card/card_arrow_white.svg" alt="card_arrow_white.">
+                  </div>
+                </div>
+              </a>
+              <a href="https://umedcollege.ru/specialties-usk/stomatologiya-profilakticheskaya-usk/">
+                <div class="card_big" data-aos="zoom-in">
+                  <img class="back" src="./images/Speed_lesson/stomatologia2.png" alt="stomatologia">
+                  <h2 class="card_title">Стоматология профилактическая</h2>
+                  <div class="podblock_big_card">
+                    <div class="Text_block">
+                      <p>высшее или среднее профессиональное образование любого профиля</p>
+                      <p>Форма обучения: Очно-Заочная</p>
+                    </div>
+                    <img src="./images/card/card_arrow_white.svg" alt="card_arrow_white.">
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="Block_cards bigger_lessons" data-aos="zoom-in">
+            <div class="block_location">
+              <img src="./images/location-icon.svg" alt="location">
+              <h2 class="block_title">Дополнительное образование</h2>
+            </div>
+
+            <div class="card_block">
+              <a href="https://umedcollege.ru/additional-education/meditsinskiy-massazh/">
+                <div class="card" data-aos="zoom-in">
+                  <img class="back" src="./images/bigger_lessons/massage.jpg" alt="massage">
+                  <h2 class="card_title">Медицинский массаж</h2>
+                  <div class="podblock_card">
+                    <div class="Text_block">
+                      <p>среднее профессиональное по специальностям "Лечебное дело", Акушерское дело", "Сестринское
+                        дело"
+                      </p>
+                      <p>Форма обучения: Очная, с применением ДОТ</p>
+                    </div>
+                    <img src="./images/card/card_arrow_white.svg" alt="card_arrow_white.">
+                  </div>
+                </div>
+              </a>
+              <a href="https://umedcollege.ru/additional-education/sestrinskoe-delo-v-kosmetologii/">
+                <div class="card" data-aos="zoom-in">
+                  <img class="back" src="./images/bigger_lessons/kosmetologia.jpg" alt="kosmetologia">
+                  <h2 class="card_title">Сестринское дело в косметологии</h2>
+                  <div class="podblock_card">
+                    <div class="Text_block">
+                      <p>среднее профессиональное по специальностям "Лечебное дело", Акушерское дело", "Сестринское
+                        дело"
+                      </p>
+                      <p>Форма обучения: Очная, с применением ДОТ</p>
+                    </div>
+                    <img src="./images/card/card_arrow_white.svg" alt="card_arrow_white.">
+                  </div>
+                </div>
+              </a>
+              <a href="https://umedcollege.ru/additional-education/teypirovanie/">
+                <div class="card" data-aos="zoom-in">
+                  <img class="back" src="./images/bigger_lessons/tapirovanie.png" alt="tapirovanie">
+                  <h2 class="card_title">Тейпирование</h2>
+                  <div class="podblock_card">
+                    <div class="Text_block">
+                      <p>требований к уровню образования нет</p>
+                      <p>Форма обучения: Очная, с применением ДОТ</p>
+                    </div>
+                    <img src="./images/card/card_arrow_white.svg" alt="card_arrow_white.">
+                  </div>
+                </div>
+              </a>
+              <a href="https://umedcollege.ru/additional-education/kosmetolog/">
+                <div class="card" data-aos="zoom-in">
+                  <img class="back" src="./images/bigger_lessons/kosmeticest.png" alt="kosmeticest">
+                  <h2 class="card_title">Косметик-эстетист по уходу за лицом</h2>
+                  <div class="podblock_card">
+                    <div class="Text_block">
+                      <p>без медицинского образования</p>
+                      <p>Форма обучения: Очная, с применением ДОТ</p>
+                    </div>
+                    <img src="./images/card/card_arrow_white.svg" alt="card_arrow_white.">
+                  </div>
+                </div>
+              </a>
+              <a href="https://umedcollege.ru/additional-education/vostrebovannye-pilingi-v-praktike-kosmetologa/">
+                <div class="card" data-aos="zoom-in">
+                  <img class="back" src="./images/bigger_lessons/piling.png" alt="piling">
+                  <h2 class="card_title">Востребованные пилинги в практике косметолога</h2>
+                  <div class="podblock_card">
+                    <div class="Text_block">
+                      <p>медицинское образование (высшее или среднее профессиональное)</p>
+                      <p>Форма обучения: Очная</p>
+                    </div>
+                    <img src="./images/card/card_arrow_white.svg" alt="card_arrow_white.">
+                  </div>
+                </div>
+              </a>
+              <a href="https://umedcollege.ru/additional-education/mezoterapia/">
+                <div class="card" data-aos="zoom-in">
+                  <img class="back" src="./images/bigger_lessons/mezoterapia.png" alt="mezoterapia">
+                  <h2 class="card_title">Мезотерапия</h2>
+                  <div class="podblock_card">
+                    <div class="Text_block">
+                      <p>среднее профессиональное медицинское или проф.переподготовка по специальности "Сестринское дело
+                        в
+                        косметологии"</p>
+                      <p>Форма обучения: Очная</p>
+                    </div>
+                    <img src="./images/card/card_arrow_white.svg" alt="card_arrow_white.">
+                  </div>
+                </div>
+              </a>
+              <a href="https://umedcollege.ru/additional-education/anesteziologiya-i-reanimatologiya/">
+                <div class="card" data-aos="zoom-in">
+                  <img class="back" src="./images/bigger_lessons/anastez.png" alt="anastez">
+                  <h2 class="card_title">Анестезиология и реаниматология</h2>
+                  <div class="podblock_card">
+                    <div class="Text_block">
+                      <p>среднее профессиональное по специальностям "Лечебное дело", Акушерское дело", "Сестринское
+                        дело"
+                      </p>
+                      <p>Форма обучения: Очная, с применением ДОТ</p>
+                    </div>
+                    <img src="./images/card/card_arrow_white.svg" alt="card_arrow_white.">
+                  </div>
+                </div>
+              </a>
+              <a href="https://umedcollege.ru/additional-education/operatsionnoe-delo/">
+                <div class="card" data-aos="zoom-in">
+                  <img class="back" src="./images/bigger_lessons/operacion.png" alt="operacion">
+                  <h2 class="card_title">Операционное дело</h2>
+                  <div class="podblock_card">
+                    <div class="Text_block">
+                      <p>среднее профессиональное по специальностям "Лечебное дело", Акушерское дело", "Сестринское
+                        дело"
+                      </p>
+                      <p>Форма обучения: Очная, с применением ДОТ</p>
+                    </div>
+                    <img src="./images/card/card_arrow_white.svg" alt="card_arrow_white.">
+                  </div>
+                </div>
+              </a>
+              <a href="https://umedcollege.ru/additional-education/serdechno-legochnaya-reanimatsiya/">
+                <div class="card" data-aos="zoom-in">
+                  <img class="back" src="./images/bigger_lessons/serdecholeg.png" alt="serdecholeg">
+                  <h2 class="card_title">Сердечно-легочная реанимация</h2>
+                  <div class="podblock_card">
+                    <div class="Text_block">
+                      <p>медицинское образование (высшее или среднее профессиональное)</p>
+                      <p>Форма обучения: Очная, с применением ДОТ</p>
+                    </div>
+                    <img src="./images/card/card_arrow_white.svg" alt="card_arrow_white.">
+                  </div>
+                </div>
+              </a>
+              <a href="https://umedcollege.ru/additional-education/pervaya-pomoshch-pri-neotlozhnykh-sostoyaniyakh/">
+                <div class="card" data-aos="zoom-in">
+                  <img class="back" src="./images/bigger_lessons/perv_pomosch.png" alt="perv_pomosch">
+                  <h2 class="card_title">Форма обучения: Очная, с применением ДОТ</h2>
+                  <div class="podblock_card">
+                    <div class="Text_block">
+                      <p>требований к уровню образования нет</p>
+                      <p>Форма обучения: Очная</p>
+                    </div>
+                    <img src="./images/card/card_arrow_white.svg" alt="card_arrow_white.">
+                  </div>
+                </div>
+              </a>
+              <a href="https://umedcollege.ru/additional-education/sestrinskoe-delo-v-stomatologii/">
+                <div class="card" data-aos="zoom-in">
+                  <img class="back" src="./images/bigger_lessons/sistrdelostom.png" alt="sistrdelo">
+                  <h2 class="card_title">Сестринское дело в стоматологии</h2>
+                  <div class="podblock_card">
+                    <div class="Text_block">
+                      <p>среднее профессиональное по специальностям "Лечебное дело", Акушерское дело", "Сестринское
+                        дело"
+                      </p>
+                      <p>Форма обучения: Очная</p>
+                    </div>
+                    <img src="./images/card/card_arrow_white.svg" alt="card_arrow_white.">
+                  </div>
+                </div>
+              </a>
+
+            </div>
+
+          </div>
+          <div class="banner" data-aos="zoom-in">
+            <div class="banner_left">
+              <p class="banner_title">Не знаешь что выбрать? UMED - выбор всей жизни!</p>
+            </div>
+            <div class="banner_right">
+              <p class="banner_text">
+                Позвоните и мы поможем вам подобрать подходящую специальность
+              </p>
+              <button class="banner__btn">Оставить заявку</button>
+            </div>
+          </div>
+          <div class="news" data-aos="zoom-in">
+            <h2 class="title_news">Новости и события</h2>
+            <a href="https://umedcollege.ru/about/news/">
+              <p>Все события</p>
+            </a>
+          </div>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="carousel--item">
+                  <div class="carousel__info">
+                    <img class="carousel__img" src="./images/swiper1/vesna.jpg" alt="">
+                    <div class="carousel__textblock">
+                      <p class="carousel_comment">Достижения</p>
+                      <h2 class="carousel__title">Весна студенческая</h2>
+                      <p class="carousel_text">Ошеломительные <br> результаты ЮМЕД <br> внутри новости</p>
+                      <a href="https://umedcollege.ru/about/news/dostizheniya/vesna-studencheskaya/">
+                        <p class="carousel_end__text">Подробнее</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="carousel--item">
+                  <div class="carousel__info">
+                    <img class="carousel__img" src="./images/swiper1/dekanat.jpg" alt="">
+                    <div class="carousel__textblock">
+                      <p class="carousel_comment">Обьявления</p>
+                      <h2 class="carousel__title">Единый деканат</h2>
+                      <p class="carousel_text">Заказать справку, узнать <br> о долгах или подать <br> заявление можно в
+                        <br>
+                        одном месте.
+                      </p>
+                      <a href="https://umedcollege.ru/about/news/obyavleniya/edinyy-dekanat/">
+                        <p class="carousel_end__text">Подробнее</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="carousel--item">
+                  <div class="carousel__info">
+                    <img class="carousel__img" src="./images/swiper1/missandmister.png" alt="">
+                    <div class="carousel__textblock">
+                      <p class="carousel_comment">События</p>
+                      <h2 class="carousel__title">Мисс и мистер <br> ЮМЕД</h2>
+                      <p class="carousel_text">Стали известны имена <br> победителей конкурса <br> 2024 года</p>
+                      <a href="https://umedcollege.ru/about/news/sobytiya/miss-i-mister-yumed/">
+                        <p class="carousel_end__text">Подробнее</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="carousel--item">
+                  <div class="carousel__info">
+                    <img class="carousel__img" src="./images/swiper1/profprob.jpg" alt="">
+                    <div class="carousel__textblock">
+                      <p class="carousel_comment">Обьявления</p>
+                      <h2 class="carousel__title">Профпробы <br> в ЮМЕД</h2>
+                      <p class="carousel_text">Уральский медицинский<br> колледж приглашает<br> попробовать себя в<br>
+                        проффесии</p>
+                      <a href="https://umedcollege.ru/about/news/obyavleniya/profproby-v-yumed/">
+                        <p class="carousel_end__text">Подробнее</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="news" data-aos="zoom-in">
+            <h2 class="title_news">Блог</h2>
+            <a href="https://umedcollege.ru/o-kolledze/blog/">
+              <p>Все записи</p>
+            </a>
+          </div>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="carousel--item">
+                  <div class="carousel__info">
+                    <img class="carousel__img" src="./images/swiper2/taipirovanie.png" alt="taipirovanie">
+                    <div class="carousel__textblock">
+                      <p class="carousel_comment">ДПО</p>
+                      <h2 class="carousel__title">Тейпирование: твои новые</h2>
+                      <p class="carousel_text">Тейпирование: что, как и где обучиться? Узнайте о тейпах, их действии и
+                        возможностях применения в спорте и здоровье!</p>
+                      <a
+                        href="https://umedcollege.ru/o-kolledze/blog/dpo/teypirovanie-tvoi-novye-vozmozhnosti-v-mire-meditsiny/">
+                        <p class="carousel_end__text">Подробнее</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="carousel--item">
+                  <div class="carousel__info">
+                    <img class="carousel__img" src="./images/swiper2/How_long_lesson.png" alt="How_long_lesson">
+                    <div class="carousel__textblock">
+                      <p class="carousel_comment">СПО</p>
+                      <h2 class="carousel__title">Сколько лет учиться на </h2>
+                      <p class="carousel_text">Как получить заветную специальность фармацевта? Сколько учиться? Смогу ли
+                        я стать фармацевтом?
+                      </p>
+                      <a href="https://umedcollege.ru/o-kolledze/blog/spo/skolko-let-uchitsya-na-farmatsevta/">
+                        <p class="carousel_end__text">Подробнее</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="carousel--item">
+                  <div class="carousel__info">
+                    <img class="carousel__img" src="./images/swiper2/asistent.png" alt="asistent">
+                    <div class="carousel__textblock">
+                      <p class="carousel_comment">ДПО</p>
+                      <h2 class="carousel__title">Ассистент стоматолога — </h2>
+                      <p class="carousel_text">Правая рука стоматолога - его ассистент! Как и где получить эту
+                        специальность?</p>
+                      <a
+                        href="https://umedcollege.ru/o-kolledze/blog/dpo/assistent-stomatologa-kto-eto-chem-zanimaetsya-i-kak-obuchitsya/">
+                        <p class="carousel_end__text">Подробнее</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="carousel--item">
+                  <div class="carousel__info">
+                    <img class="carousel__img" src="./images/swiper2/can_go_kollege.png" alt="can_go_kollege">
+                    <div class="carousel__textblock">
+                      <p class="carousel_comment">Абитуриент</p>
+                      <h2 class="carousel__title">Можно ли поступить ?</h2>
+                      <p class="carousel_text">Как получить второе среднее специальное образование? Можно ли учиться в
+                        колледже после колледжа?</p>
+                      <a
+                        href="https://umedcollege.ru/o-kolledze/blog/abiturient/mozhno-li-postupit-v-kolledzh-posle-kolledzha/">
+                        <p class="carousel_end__text">Подробнее</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <h2 class="title_slider2" data-aos="zoom-in">Отзывы</h2>
+          <div class="slider2" data-aos="zoom-in">
+            <div class="slider2__img slider2__img_active">
+              <div class="review">
+                <img class="rewiew__img" src="./images/otz2.png" alt="">
+                <div class="rewiew__textblock">
+                  <p class="rewiew_title"><i class="fas fa-quote-left fa-beat"
+                      style="color: beige; --fa-animation-duration: 2s;"></i>
+                    Студент II курса специальности «Стоматология <br>
+                    гигиеническая»</p>
+                  <p class="rewiew__text">Для меня было большим открытием, что на учебу можно ходить с большим желанием
+                    и
+                    радостью.
+                    У нас много внеклассных занятий по интересам, это помогает сплотиться группе.
+                    Преподаватели всегда идут навстречу и помогают в сложные моменты учебы. Что касается практики, то
+                    мне
+                    казалось, что будет сложнее, чем было на самом деле.
+                    Но так как на практических занятиях от нас требуют максимальной отдачи, реальная практика в
+                    стоматологической клинике далась легко.</p>
+                  <p class="rewiew__name">- Анастасия Казанцева</p>
+                </div>
+              </div>
+            </div>
+            <div class="slider2__img slider2__img_active">
+              <div class="review">
+                <img class="rewiew__img" src="./images/otz3.jpg" alt="">
+                <div class="rewiew__textblock">
+                  <p class="rewiew_title"><i class="fas fa-quote-left fa-beat"
+                      style="color: beige; --fa-animation-duration: 2s;"></i>
+                    Студент II курса отделения «Фармация»</p>
+                  <p class="rewiew__text">Больше всего нравятся практические занятия по лекарствоведению,
+                    где мы работаем с травами, учимся готовить настои, а также практикуемся отпускать лекарственные
+                    препараты,
+                    разыгрываем ситуационные задачи: как правильно отпускать, консультировать население. На практических
+                    занятиях
+                    по химии учимся изготавливать препараты согласно рецептам. Производственную практику я проходила в
+                    одной из крупнейших аптечных сетей города Челябинска.
+                    Было интересно применить свои знания в реальных условиях, поработать первостольником, за кассой.</p>
+                  <p class="rewiew__name">- Виктория Скоропунина</p>
+                </div>
+              </div>
+            </div>
+            <div class="slider2__img slider2__img_active">
+              <div class="review">
+                <img class="rewiew__img" src="./images/otz1.png" alt="">
+                <div class="rewiew__textblock">
+                  <p class="rewiew_title"><i class="fas fa-quote-left fa-beat"
+                      style="color: beige; --fa-animation-duration: 2s;"></i>
+                    Преподаватель отделения сестринского дела</p>
+                  <p class="rewiew__text">Мне, как преподавателю, крайне важно, чтобы студенты в ходе
+                    практических занятий имели возможность оттачивать навыки в максимально приближенных к реальным
+                    условиях.
+                    Благодаря высокотехнологичной базе, наши студенты учатся выполнять различные манипуляции на
+                    современнейшем и новейшем симуляционном оборудовании,
+                    что дает им преимущество в ходе клинической практики перед выпускниками других образовательных
+                    организаций.</p>
+                  <p class="rewiew__name">- Ирина Арсланова</p>
+                </div>
+              </div>
+            </div>
+
+            <button id="btnLeft2" class="slider2__btn slider2__btn_left">
+              <svg width="13" height="23" viewBox="0 0 13 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.5" clip-path="url(#clip0_2201_13)">
+                  <path
+                    d="M0.92022 10.534C0.359927 11.1174 0.359927 12.0632 0.92022 12.6466L10.0507 22.1528C10.611 22.7362 11.5195 22.7362 12.0798 22.1528C12.6401 21.5695 12.6401 20.6237 12.0798 20.0403L3.96373 11.5903L12.0798 3.14034C12.6401 2.55699 12.6401 1.6112 12.0798 1.02785C11.5195 0.444495 10.611 0.444494 10.0507 1.02784L0.92022 10.534ZM4.23029 10.0966H1.93473V13.0841H4.23029V10.0966Z"
+                    fill="white" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_2201_13">
+                    <rect width="13" height="23" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+            <button id="btnRight2" class="slider2__btn slider2__btn_right">
+              <svg width="13" height="23" viewBox="0 0 13 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_2201_11)">
+                  <path
+                    d="M12.1699 12.6461C12.7302 12.0628 12.7302 11.117 12.1699 10.5336L3.03931 1.02736C2.47902 0.444006 1.5706 0.444005 1.01031 1.02736C0.450014 1.6107 0.450014 2.5565 1.01031 3.13985L9.12636 11.5898L1.01031 20.0398C0.450014 20.6232 0.450014 21.5689 1.01031 22.1523C1.5706 22.7357 2.47902 22.7357 3.03931 22.1523L12.1699 12.6461ZM10.0076 13.0836H11.1553V10.0961H10.0076V13.0836Z"
+                    fill="white" fill-opacity="0.5" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_2201_11">
+                    <rect width="13" height="23" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+          </div>
+          <div class="download" data-aos="zoom-in">
+            <img class="qrcod" src="./images/qr.svg" alt="" width="428" height="428">
+            <div class="download__info">
+              <h2 class="download__info__title">Скачай мобильное приложение</h2>
+              <p class="download__info__text">Посмотреть расписание занятий и <br> успеваемость — все это в одном
+                приложении</p>
+              <p class="download__info__text">Также вы можете <a
+                  href="https://umedcollege.ru/uploads/ru.urmed.app.apk">cкачать .apk</a>, если у вас нет <br> доступа к
+                магазинам
+                приложений.</p>
+              <div class="download__btn">
+                <a
+                  href="https://apps.apple.com/ru/app/umed-%D0%BB%D0%B8%D1%87%D0%BD%D1%8B%D0%B9-%D0%BA%D0%B0%D0%B1%D0%B8%D0%BD%D0%B5%D1%82/id6451149793"><img
+                    src="./images/download/appstore.png" alt="appstore"></a>
+                <a href="https://play.google.com/store/apps/details?id=ru.urmed.app"><img
+                    src="./images/download/googleplay.png" alt="googleplay"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__row">
+          <div class="footer__top">
+            <a href="https://umedcollege.ru/#!"><img class="logo_footer" src="./images/white-ftr-logo.svg"
+                alt="logo"></a>
+            <ul class="footer__menu">
+              <a href="https://umedcollege.ru/o-kolledze/">
+                <li class="footer__li">О колледже</li>
+              </a>
+              <a href="https://umedcollege.ru/specialties/">
+                <li class="footer__li">Специальности</li>
+              </a>
+              <a href="https://umedcollege.ru/specialties-usk/">
+                <li class="footer__li">Ускоренное обучение</li>
+              </a>
+              <a href="https://umedcollege.ru/additional-education/">
+                <li class="footer__li">Дополнительное образование</li>
+              </a>
+              <a href="https://umedcollege.ru/for-students/">
+                <li class="footer__li">Студентам</li>
+              </a>
+              <a href="https://umedcollege.ru/for-prospective-students/">
+                <li class="footer__li">Поступающим</li>
+              </a>
+              <a href="https://umedcollege.ru/about/">
+                <li class="footer__li">Сведения об образовательной организации</li>
+              </a>
+              <a href="https://umedcollege.ru/sitemap">
+                <li class="footer__li">Карта сайта</li>
+              </a>
+            </ul>
+            <div class="footer__phone">
+              <a href="tel:+7 351 202 00 60">
+                <div class="footer__phone_top">
+                  <p class="footer_phone_text">+7 351 202 00 60</p>
+
+                  <div class="footer__consult">
+                    <img src="./images/tel-icon.svg" alt="tel-icon">
+                    <p class="footer_consult_text">Получить консультацию</p>
+                  </div>
+                </div>
+              </a>
+              <div class="footer__phone_bootom">
+                <p class="footer_address">454092, г. Челябинск, ул. Курчатова, 9</p>
+                <div class="footer__consult">
+                  <a class="footer_consult_text" href="javascript:void(0)" id="map_btn" data-bs-toggle="modal">Как нас
+                    найти?</a>
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.59497 3.97949L13.8547 13.2928" stroke="white" stroke-width="1.2" />
+                    <path d="M13.8562 5.3335V13.2928H5.94242" stroke="white" stroke-width="1.2" />
+                  </svg>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="footer__btn_icon">
+              <div class="footer__icon_mob">
+                <a href="https://vk.com/umedcollege">
+                  <svg width="31" height="20" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8.23898 2.46713C8.23898 2.81799 8.22481 3.14868 8.22279 3.47534C8.2184 3.65352 8.23952 3.83141 8.28552 4.00364C8.31341 4.11359 8.3758 4.21178 8.4636 4.28392C8.4853 4.30092 8.51075 4.31252 8.53785 4.31778C8.56494 4.32304 8.5929 4.3218 8.61942 4.31417C8.71396 4.28409 8.80043 4.23307 8.87237 4.16496C9.04538 4.00605 9.20136 3.82968 9.33781 3.63867C9.8217 2.97115 10.2207 2.24644 10.5257 1.48111C10.5803 1.35206 10.6329 1.22502 10.6835 1.09395C10.7197 0.993781 10.7918 0.910474 10.8859 0.860051C10.9448 0.838443 11.0073 0.828179 11.07 0.829804C11.0984 0.829804 11.1287 0.829804 11.1591 0.829804H13.1827C13.3203 0.829804 13.4579 0.829804 13.5874 0.829804C13.657 0.838738 13.7251 0.857053 13.7898 0.884248C13.8422 0.899506 13.8881 0.931814 13.92 0.976028C13.9519 1.02024 13.968 1.07382 13.9658 1.12823C13.9658 1.26667 13.9383 1.40373 13.8849 1.53152C13.7492 1.85887 13.5782 2.17055 13.3749 2.46109C12.9965 3.03778 12.5655 3.57616 12.1608 4.12664C12.0252 4.31014 11.8977 4.49968 11.7763 4.69124C11.7044 4.79725 11.6715 4.92477 11.6832 5.05218C11.7004 5.17559 11.7572 5.29016 11.8451 5.37884C11.9928 5.53612 12.1425 5.69138 12.3004 5.83858C12.7233 6.21471 13.1201 6.61892 13.4883 7.04843C13.6599 7.25233 13.8079 7.47487 13.9294 7.71183C13.9593 7.77579 13.9797 7.8437 13.9901 7.91347C14.0084 7.99062 14.0012 8.07161 13.9694 8.1443C13.9377 8.217 13.8832 8.2775 13.8141 8.31676C13.6788 8.40191 13.5228 8.44862 13.3628 8.45186C12.7658 8.46799 12.1689 8.46396 11.5739 8.49823C11.1913 8.5168 10.816 8.38833 10.5257 8.13931C10.3064 7.95969 10.1032 7.76132 9.91859 7.54649C9.71622 7.3267 9.52803 7.10489 9.3115 6.89518C9.2195 6.80517 9.11528 6.72847 9.00188 6.66733C8.92917 6.62298 8.84297 6.60592 8.75877 6.61922C8.67457 6.63253 8.59789 6.67533 8.54252 6.73992C8.4423 6.86027 8.37224 7.00265 8.33814 7.1553C8.27322 7.38797 8.2372 7.6277 8.23088 7.86911C8.22782 7.9292 8.22174 7.98909 8.21267 8.04857C8.20129 8.12484 8.16873 8.19642 8.11866 8.25521C8.0686 8.314 8.00303 8.35767 7.92936 8.38128C7.83128 8.42218 7.72607 8.44342 7.61975 8.44379C7.35263 8.44379 7.08551 8.44379 6.8103 8.44379C6.3388 8.43836 5.87208 8.3489 5.43221 8.17964C4.63791 7.88148 3.9272 7.39738 3.36002 6.76815C2.79718 6.15116 2.29568 5.48126 1.86254 4.76786C1.17649 3.65958 0.567961 2.50546 0.0412767 1.31374C0.00690089 1.23514 -0.00634977 1.14897 0.00282788 1.06371C0.00477103 1.03183 0.0154097 1.00109 0.0335968 0.974794C0.0517838 0.948499 0.0768293 0.92765 0.106033 0.914494C0.205816 0.864288 0.316006 0.838047 0.427789 0.83787H2.43927C2.55855 0.84592 2.67292 0.888317 2.76848 0.959909C2.86404 1.0315 2.93667 1.12921 2.97756 1.24115C3.1513 1.69884 3.36036 2.14244 3.60286 2.56796C3.86539 3.04166 4.16089 3.49646 4.48718 3.92904C4.59786 4.08904 4.73467 4.22945 4.8919 4.34442C4.94198 4.38613 5.00348 4.41189 5.06843 4.41836C5.13338 4.42483 5.19878 4.41172 5.25616 4.38071C5.3189 4.3433 5.36786 4.28673 5.39579 4.2194C5.46928 4.05115 5.51441 3.87197 5.52935 3.68908C5.57352 3.26305 5.58232 2.83411 5.55565 2.40664C5.55073 2.15149 5.52433 1.8972 5.47673 1.64645C5.46459 1.58394 5.44233 1.52345 5.43019 1.46094C5.41559 1.40281 5.38848 1.34854 5.35075 1.30188C5.31301 1.25523 5.26554 1.2173 5.21164 1.19074C5.07274 1.10471 4.91527 1.05287 4.75227 1.03951C4.70573 1.03951 4.68954 1.01531 4.70978 0.974986C4.72711 0.934844 4.75029 0.897473 4.77858 0.864083C4.92658 0.703707 5.1264 0.600223 5.34317 0.571703C5.65722 0.518 5.97571 0.494367 6.29428 0.501129C6.64841 0.501129 7.00457 0.501129 7.36073 0.523309C7.51527 0.533073 7.66846 0.558064 7.81806 0.597917C7.93719 0.621508 8.04482 0.684554 8.12344 0.776806C8.20206 0.869058 8.24706 0.985093 8.25112 1.10605C8.26834 1.30047 8.27442 1.49571 8.26933 1.69081C8.26528 1.95496 8.2491 2.22113 8.23898 2.46713Z"
+                      fill="white" />
+                  </svg>
+                </a>
+                <a href="https://ok.ru/group/68723453394994">
+                  <svg width="20" height="20" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_896_6018)">
+                      <path
+                        d="M5.82418 9.16492L5.35023 9.05425C4.34136 8.95967 3.38716 8.58072 2.61429 7.96772C2.46639 7.86199 2.3603 7.71335 2.31269 7.54517C2.28785 7.41317 2.2974 7.27753 2.34052 7.1497C2.38364 7.02187 2.45907 6.90562 2.56043 6.81076C2.69468 6.67286 2.87824 6.58551 3.07659 6.56513C3.27495 6.54475 3.47444 6.59275 3.63758 6.70009C3.86378 6.82082 4.05766 6.97172 4.28386 7.09245C4.78803 7.33314 5.33609 7.48329 5.89958 7.53511C6.73783 7.6361 7.58973 7.52492 8.36624 7.21318C8.62995 7.09646 8.88225 6.95844 9.12024 6.80069C9.33307 6.65498 9.58886 6.57417 9.85269 6.5693C10.0125 6.57176 10.168 6.61785 10.3 6.70187C10.4321 6.78589 10.535 6.90418 10.5959 7.04215C10.6475 7.12656 10.6806 7.21969 10.6933 7.31613C10.706 7.41258 10.6981 7.51043 10.6701 7.604C10.642 7.69758 10.5944 7.78503 10.5299 7.86128C10.4654 7.93753 10.3853 8.00106 10.2943 8.0482C9.90127 8.36751 9.45335 8.62261 8.96944 8.80274C8.49638 8.96763 8.005 9.08237 7.50452 9.1448H7.18138L7.27832 9.25546L9.77729 11.5895C9.90759 11.6978 9.99688 11.8425 10.0318 12.0021C10.0668 12.1616 10.0455 12.3275 9.97118 12.4748C9.90295 12.6263 9.78946 12.7561 9.64429 12.8489C9.49911 12.9417 9.32839 12.9934 9.15255 12.998C9.05138 12.9973 8.95142 12.9773 8.85882 12.9392C8.76621 12.9012 8.68289 12.8458 8.61398 12.7767L6.80438 11.1167L6.62126 10.9054C6.56741 10.845 6.52432 10.845 6.45969 10.9054L5.45795 11.841C5.11326 12.163 4.77935 12.4849 4.38081 12.7968C4.23623 12.9271 4.04315 12.9999 3.84223 12.9999C3.64131 12.9999 3.44823 12.9271 3.30366 12.7968C3.14868 12.6714 3.04261 12.5016 3.00206 12.3139C2.97794 12.2006 2.98399 12.0836 3.01968 11.9731C3.05537 11.8626 3.1196 11.7619 3.20672 11.6801L4.55315 10.4225L5.73801 9.26552L5.82418 9.16492Z"
+                        fill="white" />
+                      <path
+                        d="M6.49247 1.49698e-05C7.19093 -0.00195261 7.87425 0.190079 8.45558 0.551705C9.03691 0.91333 9.49 1.42822 9.75727 2.03094C10.0245 2.63365 10.0939 3.29698 9.9566 3.93661C9.81927 4.57625 9.48144 5.1633 8.98603 5.62318C8.49062 6.08305 7.86001 6.39497 7.17435 6.51929C6.48869 6.64362 5.77893 6.57474 5.13528 6.3214C4.49163 6.06806 3.94316 5.64171 3.55956 5.09654C3.17597 4.55136 2.97458 3.91197 2.98098 3.25963C2.98667 2.39328 3.35914 1.56423 4.01706 0.953502C4.67497 0.342778 5.56489 -1.33435e-06 6.49247 1.49698e-05ZM4.7475 3.26969C4.7433 3.59156 4.84125 3.90739 5.02899 4.17734C5.21673 4.44729 5.48586 4.65926 5.80242 4.78654C6.11898 4.91381 6.46881 4.95067 6.80778 4.89248C7.14674 4.83429 7.45967 4.68365 7.70709 4.45957C7.95451 4.23548 8.12535 3.94797 8.19805 3.63332C8.27075 3.31866 8.24206 2.99094 8.11559 2.6915C7.98913 2.39205 7.77056 2.13429 7.48745 1.95072C7.20434 1.76714 6.86937 1.66599 6.52478 1.66C6.29473 1.65601 6.0661 1.69455 5.85205 1.7734C5.63801 1.85226 5.44277 1.96988 5.27759 2.11949C5.1124 2.2691 4.98052 2.44774 4.88955 2.64514C4.79858 2.84254 4.7503 3.05479 4.7475 3.26969Z"
+                        fill="white" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_896_6018">
+                        <rect width="13" height="13" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+              <a href="#!" class="footer__btn" id="askQuestion_btn"data-bs-toggle="modal" data-bs-target="#askQuestionModal"><img src="./images/footer/chat-icon.svg" alt="chat-icon">   <p class="footer_btn__text">Задать вопрос</p></a>
+              <div class="footer__icon">
+                <a href="https://vk.com/umedcollege">
+                  <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8.23898 2.46713C8.23898 2.81799 8.22481 3.14868 8.22279 3.47534C8.2184 3.65352 8.23952 3.83141 8.28552 4.00364C8.31341 4.11359 8.3758 4.21178 8.4636 4.28392C8.4853 4.30092 8.51075 4.31252 8.53785 4.31778C8.56494 4.32304 8.5929 4.3218 8.61942 4.31417C8.71396 4.28409 8.80043 4.23307 8.87237 4.16496C9.04538 4.00605 9.20136 3.82968 9.33781 3.63867C9.8217 2.97115 10.2207 2.24644 10.5257 1.48111C10.5803 1.35206 10.6329 1.22502 10.6835 1.09395C10.7197 0.993781 10.7918 0.910474 10.8859 0.860051C10.9448 0.838443 11.0073 0.828179 11.07 0.829804C11.0984 0.829804 11.1287 0.829804 11.1591 0.829804H13.1827C13.3203 0.829804 13.4579 0.829804 13.5874 0.829804C13.657 0.838738 13.7251 0.857053 13.7898 0.884248C13.8422 0.899506 13.8881 0.931814 13.92 0.976028C13.9519 1.02024 13.968 1.07382 13.9658 1.12823C13.9658 1.26667 13.9383 1.40373 13.8849 1.53152C13.7492 1.85887 13.5782 2.17055 13.3749 2.46109C12.9965 3.03778 12.5655 3.57616 12.1608 4.12664C12.0252 4.31014 11.8977 4.49968 11.7763 4.69124C11.7044 4.79725 11.6715 4.92477 11.6832 5.05218C11.7004 5.17559 11.7572 5.29016 11.8451 5.37884C11.9928 5.53612 12.1425 5.69138 12.3004 5.83858C12.7233 6.21471 13.1201 6.61892 13.4883 7.04843C13.6599 7.25233 13.8079 7.47487 13.9294 7.71183C13.9593 7.77579 13.9797 7.8437 13.9901 7.91347C14.0084 7.99062 14.0012 8.07161 13.9694 8.1443C13.9377 8.217 13.8832 8.2775 13.8141 8.31676C13.6788 8.40191 13.5228 8.44862 13.3628 8.45186C12.7658 8.46799 12.1689 8.46396 11.5739 8.49823C11.1913 8.5168 10.816 8.38833 10.5257 8.13931C10.3064 7.95969 10.1032 7.76132 9.91859 7.54649C9.71622 7.3267 9.52803 7.10489 9.3115 6.89518C9.2195 6.80517 9.11528 6.72847 9.00188 6.66733C8.92917 6.62298 8.84297 6.60592 8.75877 6.61922C8.67457 6.63253 8.59789 6.67533 8.54252 6.73992C8.4423 6.86027 8.37224 7.00265 8.33814 7.1553C8.27322 7.38797 8.2372 7.6277 8.23088 7.86911C8.22782 7.9292 8.22174 7.98909 8.21267 8.04857C8.20129 8.12484 8.16873 8.19642 8.11866 8.25521C8.0686 8.314 8.00303 8.35767 7.92936 8.38128C7.83128 8.42218 7.72607 8.44342 7.61975 8.44379C7.35263 8.44379 7.08551 8.44379 6.8103 8.44379C6.3388 8.43836 5.87208 8.3489 5.43221 8.17964C4.63791 7.88148 3.9272 7.39738 3.36002 6.76815C2.79718 6.15116 2.29568 5.48126 1.86254 4.76786C1.17649 3.65958 0.567961 2.50546 0.0412767 1.31374C0.00690089 1.23514 -0.00634977 1.14897 0.00282788 1.06371C0.00477103 1.03183 0.0154097 1.00109 0.0335968 0.974794C0.0517838 0.948499 0.0768293 0.92765 0.106033 0.914494C0.205816 0.864288 0.316006 0.838047 0.427789 0.83787H2.43927C2.55855 0.84592 2.67292 0.888317 2.76848 0.959909C2.86404 1.0315 2.93667 1.12921 2.97756 1.24115C3.1513 1.69884 3.36036 2.14244 3.60286 2.56796C3.86539 3.04166 4.16089 3.49646 4.48718 3.92904C4.59786 4.08904 4.73467 4.22945 4.8919 4.34442C4.94198 4.38613 5.00348 4.41189 5.06843 4.41836C5.13338 4.42483 5.19878 4.41172 5.25616 4.38071C5.3189 4.3433 5.36786 4.28673 5.39579 4.2194C5.46928 4.05115 5.51441 3.87197 5.52935 3.68908C5.57352 3.26305 5.58232 2.83411 5.55565 2.40664C5.55073 2.15149 5.52433 1.8972 5.47673 1.64645C5.46459 1.58394 5.44233 1.52345 5.43019 1.46094C5.41559 1.40281 5.38848 1.34854 5.35075 1.30188C5.31301 1.25523 5.26554 1.2173 5.21164 1.19074C5.07274 1.10471 4.91527 1.05287 4.75227 1.03951C4.70573 1.03951 4.68954 1.01531 4.70978 0.974986C4.72711 0.934844 4.75029 0.897473 4.77858 0.864083C4.92658 0.703707 5.1264 0.600223 5.34317 0.571703C5.65722 0.518 5.97571 0.494367 6.29428 0.501129C6.64841 0.501129 7.00457 0.501129 7.36073 0.523309C7.51527 0.533073 7.66846 0.558064 7.81806 0.597917C7.93719 0.621508 8.04482 0.684554 8.12344 0.776806C8.20206 0.869058 8.24706 0.985093 8.25112 1.10605C8.26834 1.30047 8.27442 1.49571 8.26933 1.69081C8.26528 1.95496 8.2491 2.22113 8.23898 2.46713Z"
+                      fill="white" />
+                  </svg>
+                </a>
+                <a href="https://ok.ru/group/68723453394994">
+                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_896_6018)">
+                      <path
+                        d="M5.82418 9.16492L5.35023 9.05425C4.34136 8.95967 3.38716 8.58072 2.61429 7.96772C2.46639 7.86199 2.3603 7.71335 2.31269 7.54517C2.28785 7.41317 2.2974 7.27753 2.34052 7.1497C2.38364 7.02187 2.45907 6.90562 2.56043 6.81076C2.69468 6.67286 2.87824 6.58551 3.07659 6.56513C3.27495 6.54475 3.47444 6.59275 3.63758 6.70009C3.86378 6.82082 4.05766 6.97172 4.28386 7.09245C4.78803 7.33314 5.33609 7.48329 5.89958 7.53511C6.73783 7.6361 7.58973 7.52492 8.36624 7.21318C8.62995 7.09646 8.88225 6.95844 9.12024 6.80069C9.33307 6.65498 9.58886 6.57417 9.85269 6.5693C10.0125 6.57176 10.168 6.61785 10.3 6.70187C10.4321 6.78589 10.535 6.90418 10.5959 7.04215C10.6475 7.12656 10.6806 7.21969 10.6933 7.31613C10.706 7.41258 10.6981 7.51043 10.6701 7.604C10.642 7.69758 10.5944 7.78503 10.5299 7.86128C10.4654 7.93753 10.3853 8.00106 10.2943 8.0482C9.90127 8.36751 9.45335 8.62261 8.96944 8.80274C8.49638 8.96763 8.005 9.08237 7.50452 9.1448H7.18138L7.27832 9.25546L9.77729 11.5895C9.90759 11.6978 9.99688 11.8425 10.0318 12.0021C10.0668 12.1616 10.0455 12.3275 9.97118 12.4748C9.90295 12.6263 9.78946 12.7561 9.64429 12.8489C9.49911 12.9417 9.32839 12.9934 9.15255 12.998C9.05138 12.9973 8.95142 12.9773 8.85882 12.9392C8.76621 12.9012 8.68289 12.8458 8.61398 12.7767L6.80438 11.1167L6.62126 10.9054C6.56741 10.845 6.52432 10.845 6.45969 10.9054L5.45795 11.841C5.11326 12.163 4.77935 12.4849 4.38081 12.7968C4.23623 12.9271 4.04315 12.9999 3.84223 12.9999C3.64131 12.9999 3.44823 12.9271 3.30366 12.7968C3.14868 12.6714 3.04261 12.5016 3.00206 12.3139C2.97794 12.2006 2.98399 12.0836 3.01968 11.9731C3.05537 11.8626 3.1196 11.7619 3.20672 11.6801L4.55315 10.4225L5.73801 9.26552L5.82418 9.16492Z"
+                        fill="white" />
+                      <path
+                        d="M6.49247 1.49698e-05C7.19093 -0.00195261 7.87425 0.190079 8.45558 0.551705C9.03691 0.91333 9.49 1.42822 9.75727 2.03094C10.0245 2.63365 10.0939 3.29698 9.9566 3.93661C9.81927 4.57625 9.48144 5.1633 8.98603 5.62318C8.49062 6.08305 7.86001 6.39497 7.17435 6.51929C6.48869 6.64362 5.77893 6.57474 5.13528 6.3214C4.49163 6.06806 3.94316 5.64171 3.55956 5.09654C3.17597 4.55136 2.97458 3.91197 2.98098 3.25963C2.98667 2.39328 3.35914 1.56423 4.01706 0.953502C4.67497 0.342778 5.56489 -1.33435e-06 6.49247 1.49698e-05ZM4.7475 3.26969C4.7433 3.59156 4.84125 3.90739 5.02899 4.17734C5.21673 4.44729 5.48586 4.65926 5.80242 4.78654C6.11898 4.91381 6.46881 4.95067 6.80778 4.89248C7.14674 4.83429 7.45967 4.68365 7.70709 4.45957C7.95451 4.23548 8.12535 3.94797 8.19805 3.63332C8.27075 3.31866 8.24206 2.99094 8.11559 2.6915C7.98913 2.39205 7.77056 2.13429 7.48745 1.95072C7.20434 1.76714 6.86937 1.66599 6.52478 1.66C6.29473 1.65601 6.0661 1.69455 5.85205 1.7734C5.63801 1.85226 5.44277 1.96988 5.27759 2.11949C5.1124 2.2691 4.98052 2.44774 4.88955 2.64514C4.79858 2.84254 4.7503 3.05479 4.7475 3.26969Z"
+                        fill="white" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_896_6018">
+                        <rect width="13" height="13" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <p class="footer__bottom_textbold">© 2024</p>
+            <p class="footer__bottom_textbold">Уральский медицинский колледж</p>
+            <a href="https://umedcollege.ru/privacy-policy/">
+              <p class="footer__bootom_politica">Политика конфиденциальности</p>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </footer>
+  </div>
+
+  <script src="./js/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
